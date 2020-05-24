@@ -5,14 +5,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class Classe1 {
 
-    private Classe2 c2;
+    private Interface2 i2;
 
-    public Classe1(Classe2 c2){
-        this.c2 = c2;
+    public Classe1(Interface2 i2){
+        this.i2 = i2;
     }
     
     public String process(){
-        return "c1 - " + c2.process();
+        return "c1 - " + i2.process();
     }
 
 }
