@@ -1,5 +1,8 @@
 package com.paulocandido.atendimento;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Classe1 {
 
     private Classe2 c2;
