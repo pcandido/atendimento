@@ -31,6 +31,7 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok:1.18.12'
 	annotationProcessor 'org.projectlombok:lombok:1.18.12'
 	compile group: 'org.flywaydb', name: 'flyway-core'
+	testCompile group: 'org.junit.platform', name: 'junit-platform-engine', version: '1.6.2'
 	testCompileOnly 'org.projectlombok:lombok:1.18.12'
 	testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
