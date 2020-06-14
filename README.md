@@ -2,6 +2,8 @@
 
 Esse projeto é parte do material desenvolvido para o *Tutorial - API REST* disponível no YouTube. Visite a playlist para acompanhar o desenvolvimento desse projeto.
 
+[Playlist YouTube: Tutorial - WEB API](https://www.youtube.com/playlist?list=PLMNbRZnNsaq-rQro0TgTrJSq-9xFX_aNo)
+
 Todos os vídeos possuem uma tag criada no git para que seja possível acompanhar o progresso do desenvolvimento através do próprio histórico do repositório. As tags seguem o padrão `vXX` onde `XX` é o número do vídeo (a tag estará referenciada no título de cada vídeo). Para obter a lista de tags pelo git, utilize o comando `git tag`.
 
 ## Database
