@@ -1,9 +1,10 @@
-package com.paulocandido.atendimento.service;
+package com.paulocandido.atendimento.service.implementations;
 
 import java.time.LocalDateTime;
 
 import com.paulocandido.atendimento.model.Atendimento;
 import com.paulocandido.atendimento.repository.AtendimentoRepository;
+import com.paulocandido.atendimento.service.AtendimentoService;
 
 public class AtendimentoServiceImpl extends AbstractServiceImpl<Atendimento> implements AtendimentoService {
 

@@ -1,7 +1,8 @@
-package com.paulocandido.atendimento.service;
+package com.paulocandido.atendimento.service.implementations;
 
 import com.paulocandido.atendimento.model.Cliente;
 import com.paulocandido.atendimento.repository.ClienteRepository;
+import com.paulocandido.atendimento.service.ClienteService;
 
 import org.springframework.stereotype.Service;
 

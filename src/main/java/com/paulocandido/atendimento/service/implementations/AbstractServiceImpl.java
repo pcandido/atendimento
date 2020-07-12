@@ -1,8 +1,9 @@
-package com.paulocandido.atendimento.service;
+package com.paulocandido.atendimento.service.implementations;
 
 import java.util.List;
 
 import com.paulocandido.atendimento.model.Identifiable;
+import com.paulocandido.atendimento.service.AbstractService;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
