@@ -1,14 +1,12 @@
 package com.paulocandido.atendimento.service;
 
-import java.util.List;
-
 import com.paulocandido.atendimento.model.Cliente;
 import com.paulocandido.atendimento.repository.ClienteRepository;
 
 import org.springframework.stereotype.Service;
 
 @Service
-public class ClienteServiceImpl implements ClienteService {
+public class ClienteServiceImpl extends AbstractServiceImpl<Cliente> implements ClienteService {
 
     private ClienteRepository repository;
 
@@ -17,33 +15,15 @@ public class ClienteServiceImpl implements ClienteService {
     }
 
     @Override
-    public Cliente create(Cliente cliente) {
+    protected ClienteRepository getRepository() {
+        return repository;
+    }
 
-        if (repository.existsByEmail(cliente.getEmail()))
+    @Override
+    protected void onBeforeCreate(Cliente obj) {
+        super.onBeforeCreate(obj);
+        if (repository.existsByEmail(obj.getEmail()))
             throw new RuntimeException();
-
-        return repository.save(cliente);
-    }
-
-    @Override
-    public List<Cliente> list() {
-        return repository.findAll();
-    }
-
-    @Override
-    public Cliente getById(long id) {
-        return repository.getOne(id);
-    }
-
-    @Override
-    public Cliente update(long id, Cliente cliente) {
-        cliente.setId(id);
-        return repository.save(cliente);
-    }
-
-    @Override
-    public void delete(long id) {
-        repository.deleteById(id);
     }
 
 }

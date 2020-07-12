@@ -8,11 +8,10 @@ import javax.persistence.Id;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
 @Data
 @NoArgsConstructor
 @Entity
-public class Operador {
+public class Operador implements Identifiable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

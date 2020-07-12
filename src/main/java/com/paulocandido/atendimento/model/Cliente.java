@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 @Entity
-public class Cliente {
+public class Cliente implements Identifiable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
