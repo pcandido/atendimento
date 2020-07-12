@@ -30,7 +30,7 @@ dependencies {
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 	compileOnly 'org.projectlombok:lombok:1.18.12'
 	annotationProcessor 'org.projectlombok:lombok:1.18.12'
-	compileOnly group: 'org.flywaydb', name: 'flyway-core'
+	implementation group: 'org.flywaydb', name: 'flyway-core'
 	testImplementation group: 'org.junit.platform', name: 'junit-platform-engine', version: '1.6.2'
 	testCompileOnly 'org.projectlombok:lombok:1.18.12'
 	testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
