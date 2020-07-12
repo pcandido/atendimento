@@ -19,7 +19,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @Entity
-public class Atendimento {
+public class Atendimento implements Identifiable{
 
     /**
      * Identificador do objeto
